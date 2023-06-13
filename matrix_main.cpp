@@ -1,10 +1,13 @@
 #include <iostream>
+#include "operations.h"
 
 using namespace std;
 
 int main() {
+	Operations Operations;
 	string userSelection;
 	double a, b, c, d;
+
 
 	// WIP Message
 	cout << "This calculator is currently in progress" << endl;
@@ -21,7 +24,10 @@ int main() {
 	cout << "Reduced Row Echelon (R)" << endl;
 	cin >> userSelection;
 
-	
+	if (userSelection == "D") {
+		Operations.FindDeterminant(a, b, c, d);
+		Operations.PrintDeterminant();
+	}
 
 	return 0;
 }
