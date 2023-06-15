@@ -11,3 +11,13 @@ void Operations::FindDeterminant(double a, double b, double c, double d) {
 void Operations::PrintDeterminant() {
 	cout << determinant << endl;
 }
+
+void Operations::FindRRE(double a, double b, double c, double d) {
+	/*
+	[ a  b ]
+	[ c  d ]
+	*/
+	a /= a;
+	b /= a;
+
+}
